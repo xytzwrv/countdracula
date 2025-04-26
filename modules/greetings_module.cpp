@@ -1,4 +1,4 @@
-#include "greetings_module.h"
+#include "greetings_module.hpp"
 
 GreetingsModule::GreetingsModule(dpp::cluster& bot) {
     bot.on_slashcommand([&bot](const dpp::slashcommand_t& event) {
