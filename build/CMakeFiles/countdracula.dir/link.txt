@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/countdracula.dir/main.cpp.o CMakeFiles/countdracula.dir/modules/greetings_module.cpp.o CMakeFiles/countdracula.dir/modules/chess/chess_module.cpp.o -o countdracula  -ldpp 
