@@ -1,0 +1,3 @@
+/home/newton/countdracula/build/CMakeFiles/countdracula.dir
+/home/newton/countdracula/build/CMakeFiles/edit_cache.dir
+/home/newton/countdracula/build/CMakeFiles/rebuild_cache.dir
