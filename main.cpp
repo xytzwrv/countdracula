@@ -1,5 +1,6 @@
 #include <dpp/dpp.h>
-#include "modules/greetings_module.h"
+#include "modules/greetings_module.hpp"
+#include "modules/chess/chess_module.hpp"
 #include <cstdlib>
 #include <iostream>
 
@@ -13,12 +14,14 @@ int main() {
 
     dpp::cluster bot(token);
 
+    // Initialize modules
     GreetingsModule greetings(bot);
+    ChessModule chess(bot);
 
     bot.on_ready([&bot](const dpp::ready_t& event) {
-        bot.set_presence(dpp::presence(dpp::ps_online, dpp::at_playing, "Modular Bot!"));
+        std::cout << "Bot is ready! Logged in as " << bot.me.username << std::endl;
+        bot.set_presence(dpp::presence(dpp::ps_online, dpp::at_playing, "Chess and more!"));
     });
 
     bot.start(dpp::st_wait);
 }
-
